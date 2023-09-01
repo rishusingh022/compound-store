@@ -5,7 +5,7 @@ const {parse} = require('@fast-csv/parse');
 
 /** @type {import('sequelize-cli').Migration} */
 
-const tableName = 'create-nuvertos-compounds';
+const tableName = 'nuvertos-compounds';
 module.exports = {
   async up (queryInterface, Sequelize) {
     const allRows = [];
@@ -21,7 +21,8 @@ module.exports = {
             id: row.id,
             compoundName: row.CompoundName,
             compoundDescription: row.CompounrDescription,
-            compoundImageUrl: row.strImageSource            
+            compoundImageUrl: row.strImageSource, 
+            dateModified: new Date(row.dateModified)        
           });
         })
         .on('end', () => {

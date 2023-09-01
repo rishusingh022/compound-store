@@ -2,7 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 
-const tableName = 'create-nuvertos-compounds';
+const tableName = 'nuvertos-compounds';
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable(tableName, {
@@ -20,6 +20,9 @@ module.exports = {
       },
       compoundImageUrl: {
         type: Sequelize.STRING,
+      },
+      dateModified: {
+        type: Sequelize.DATE,
       },
     });
 
