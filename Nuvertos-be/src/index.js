@@ -1,14 +1,20 @@
 const express = require('express');
-const cors = require('cors');
-
+const router  = require('./routes');
 const { PORT } = require('./config');
+const cors = require('cors');
 
 const app = express();
 
 app.use(cors());
+
 app.use(express.json());
 
-// app.use('', require('./routes'));
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+app.use('/api', router);
+
+app.listen(PORT, (error) => {
+  if (!error) {
+    console.log(`Server running successfully at port ${PORT}`);
+  } else {
+    console.log('Error occurred! Server failed to run');
+  }
 });

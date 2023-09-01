@@ -2,7 +2,7 @@
 
 /** @type {import('sequelize-cli').Migration} */
 
-const tableName = 'nuvertos-compounds';
+const tableName = 'nuvertosCompounds';
 module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.createTable(tableName, {

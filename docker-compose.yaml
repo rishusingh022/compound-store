@@ -3,7 +3,7 @@ services:
     image: mysql
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: nuvertos-compounds
+      MYSQL_DATABASE: nuvertosCompoundsDB
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       interval: 10s

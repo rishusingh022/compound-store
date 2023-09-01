@@ -3,7 +3,7 @@ const {
   Model
 } = require('sequelize');
 
-const tableName = 'nuvertos-compounds';
+const tableName = 'nuvertosCompounds';
 
 module.exports = (sequelize, DataTypes) => {
   class compounds extends Model {

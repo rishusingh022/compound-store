@@ -5,7 +5,7 @@ const {parse} = require('@fast-csv/parse');
 
 /** @type {import('sequelize-cli').Migration} */
 
-const tableName = 'nuvertos-compounds';
+const tableName = 'nuvertosCompounds';
 module.exports = {
   async up (queryInterface, Sequelize) {
     const allRows = [];
