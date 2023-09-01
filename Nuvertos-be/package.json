@@ -1,0 +1,25 @@
+{
+  "name": "nuvertos-be",
+  "version": "0.0.1",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch .",
+    "migrate": "sequelize-cli db:migrate",
+    "seed": "sequelize-cli db:seed:all"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "joi": "^17.9.2",
+    "mysql2": "^3.5.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "@fast-csv/parse": "^4.3.6",
+    "eslint": "^8.44.0",
+    "sequelize-cli": "^6.6.1"
+  }
+}
