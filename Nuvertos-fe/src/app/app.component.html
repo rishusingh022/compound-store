@@ -1,3 +1,31 @@
-<h1 class="text-2xl font-bold underline">
-  Hello world!
-</h1>
+<app-header></app-header>
+<div class="m-5 min-h-[80vh] flex justify-center items-center">
+  <div class="mx-[%] border border-gray-300 shadow-md rounded-md p-4 bg-white">
+    <div class="flex flex-row flex-wrap">
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+        <app-card></app-card>
+    </div>
+    <nav class="flex items-center justify-between border-t border-gray-200 px-4 py-3 sm:px-6" aria-label="Pagination">
+        <div class="hidden sm:block">
+            <p class="text-sm text-gray-700">
+                Showing
+                <span class="font-medium">1</span>
+                to
+                <span class="font-medium">10</span>
+                of
+                <span class="font-medium">20</span>
+                results
+            </p>
+        </div>
+        <div class="flex flex-1 justify-between sm:justify-end">
+            <div href="#" class="relative inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">Previous</div>
+            <div href="#" class="relative ml-3 inline-flex items-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 focus-visible:outline-offset-0">Next</div>
+        </div>
+    </nav>
+  </div>
+</div>
+<app-footer></app-footer>
+
+
