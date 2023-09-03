@@ -1,5 +1,3 @@
-const API_URL = 'http://localhost:8000/api';
+const BASE_URL = 'http://localhost:3000/api/compounds';
 
-module.exports = {
-    API_URL,
-};
+export default BASE_URL;

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DEFAULT_ROUTE,HOME_ROUTE, COMPOUND_DETAILS_ROUTE, NOT_FOUND_ROUTE } from './constant/routes';
 
 // pages 
 import { HomeComponent } from './pages/home/home.component';
@@ -7,9 +8,10 @@ import { CardDetailsComponent } from './pages/card-details/card-details.componen
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 const routes: Routes = [
-    { path: '', component: HomeComponent },
-    { path: 'details/:id', component: CardDetailsComponent },
-    { path: '**', component: NotFoundPageComponent },
+    { path: DEFAULT_ROUTE, redirectTo: HOME_ROUTE, pathMatch: 'full' },
+    { path: HOME_ROUTE, component: HomeComponent },
+    { path: COMPOUND_DETAILS_ROUTE, component: CardDetailsComponent },
+    { path: NOT_FOUND_ROUTE, component: NotFoundPageComponent },
 ];
 
 @NgModule({
