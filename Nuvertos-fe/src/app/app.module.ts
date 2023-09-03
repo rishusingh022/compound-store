@@ -14,6 +14,7 @@ import { AddModalComponent } from './components/add-modal/add-modal.component';
 import { AlertModalComponent } from './components/alert-modal/alert-modal.component';
 import { EditModalComponent } from './components/edit-modal/edit-modal.component';
 import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.com
     AddModalComponent,
     AlertModalComponent,
     EditModalComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    LandingPageComponent
   ],
   imports: [
     BrowserModule,
