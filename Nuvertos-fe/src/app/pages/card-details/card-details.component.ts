@@ -1,4 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { CompoundService } from 'src/app/services/compound.service';
+import { Compound } from '../../constant/type'
 
 @Component({
   selector: 'app-card-details',
@@ -7,10 +10,24 @@ import { Component } from '@angular/core';
 })
 export class CardDetailsComponent {
   
+  id:string = '';
+  compound: Compound = {
+    id: 0,
+    compoundName: '',
+    compoundDescription: '',
+    compoundImage: ''
+  }
+  
   openEditModal:boolean = false;
   openDeleteModal:boolean = false;
 
-  constructor() { }
+  constructor(private route: ActivatedRoute, private compoundService: CompoundService, private router: Router) { }
+
+  ngOnInit(): void {
+    this.id = this.route.snapshot.params['id'];
+    this.compoundService.getCompound(this.id).subscribe((compound) => (this.compound = compound), (error) => this.router.navigate(['/404']));
+    
+  }; 
 
   openEditModalFunc(){
     this.openEditModal = true;

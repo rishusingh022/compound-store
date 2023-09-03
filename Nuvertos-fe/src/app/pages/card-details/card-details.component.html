@@ -21,11 +21,19 @@
 
     <div class="w-full flex flex-col 2xl:flex-row flex-wrap justify-around">
       <div class="w-[100%] 2xl:w-[30%] flex justify-center mt-[1rem] 2xl:border-r border-gray-200">
-        <app-card></app-card>
+        <div class="m-[25px] max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-white dark:border-gray-700 w-[290px] h-[350px] flex flex-col">
+          <div class="bg-contain bg-no-repeat bg-center object-contain rounded-t-lg flex-1" style="background-image: url({{compound.compoundImage}})">
+          </div>
+          <div class="p-5 flex flex-col justify-center items-center">
+              <div class="text-center">
+                  <h5 class="mb-2 text-[30px] font-bold tracking-tight text-gray-900 dark:text-black">{{compound.compoundName}}</h5>
+              </div>
+          </div>
+      </div>
       </div>
       <div class="w-[100%] 2xl:w-[70%] flex justify-center items-center">
         <div class="w-[70%] text-xl text-center">
-            Ammonium aluminium sulfate, also known as ammonium alum or just alum (though there are many different substances also called 'alum'), is a white crystalline double sulfate usually encountered as the dodecahydrate, formula (NH4)Al(SO4)2·12H2O. It is used in small amounts in a variety of niche applications.
+          {{compound.compoundDescription}}
         </div>
       </div>
     </div>
