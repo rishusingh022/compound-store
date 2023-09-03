@@ -18,7 +18,7 @@ module.exports = {
       compoundDescription: {
         type: Sequelize.TEXT,
       },
-      compoundImageUrl: {
+      compoundImage: {
         type: Sequelize.STRING,
       },
       dateModified: {

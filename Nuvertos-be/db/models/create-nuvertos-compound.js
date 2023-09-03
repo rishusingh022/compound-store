@@ -22,7 +22,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: true
     },
     compoundDescription: DataTypes.TEXT,
-    compoundImageUrl: DataTypes.STRING,
+    compoundImage: DataTypes.STRING,
     dateModified: DataTypes.DATE
   }, {
     sequelize,

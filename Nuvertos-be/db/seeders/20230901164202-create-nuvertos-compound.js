@@ -21,7 +21,7 @@ module.exports = {
             id: row.id,
             compoundName: row.CompoundName,
             compoundDescription: row.CompounrDescription,
-            compoundImageUrl: row.strImageSource, 
+            compoundImage: row.strImageSource, 
             dateModified: new Date(row.dateModified)        
           });
         })
