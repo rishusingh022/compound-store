@@ -7,6 +7,9 @@ Compounds Store reference for NuvertOs Users
 ## Home Screen
 ![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/253154c5-fd94-4df1-9551-a79eddd3face)
 
+## Pagination Screen
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/5da3912c-620b-4efb-9a1d-88fa1859429f)
+
 ## Add Compound Screen
 ![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/61765194-bdda-4c03-a5c5-c9bf83a41bf9)
 
