@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Compound } from 'src/app/constant/type';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent {
-
+  @Input() compound: Compound = {
+    id: 0,
+    compoundName: '',
+    compoundDescription: '',
+    compoundImageUrl: ''
+  };
 }

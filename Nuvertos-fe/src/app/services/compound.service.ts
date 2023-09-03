@@ -17,8 +17,10 @@ export class CompoundService {
   private BASE_URL = BASE_URL;
   constructor(private http:HttpClient) { }
 
-  getCompounds(page:string): Observable<CompoundResponse> {
-    return this.http.get<CompoundResponse>(this.BASE_URL + '?pg=' + page);
+  getCompounds(page:number): Observable<CompoundResponse> {
+    // console.log(this.BASE_URL + '?pg=' + `${page}`);
+    // console.log(this.http.get<CompoundResponse>(this.BASE_URL + '?pg=' + `${page}`));
+    return this.http.get<CompoundResponse>(this.BASE_URL + '?pg=' + `${page}`);
   }
 
   getCompound(id:string): Observable<Compound> {
