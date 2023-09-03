@@ -38,6 +38,6 @@
       </div>
     </div>
   </div>
-  <app-edit-modal *ngIf="openEditModal" (close)="closeEditModalFunc()"></app-edit-modal>
+  <app-edit-modal [compound]="compound" *ngIf="openEditModal" (close)="closeEditModalFunc()"></app-edit-modal>
   <app-alert-modal *ngIf="openDeleteModal" (close)="closeDeleteModalFunc()"></app-alert-modal>
 </div>
