@@ -6,7 +6,8 @@
       class="flex items-center justify-end border-b border-gray-200 px-4 pb-3 sm:px-6"
     >
       <div
-        class="inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        (click)="openCreateModalFunc()"
+        class=" cursor-pointer inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
         Add Compound
       </div>
@@ -48,4 +49,5 @@
       </div>
     </div>
   </div>
+  <app-add-modal *ngIf="openCreateModal" (close)="closeCreateModalFunc()"></app-add-modal>
 </div>

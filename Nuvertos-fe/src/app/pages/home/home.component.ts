@@ -6,5 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
+  openCreateModal:boolean = false;
 
+  constructor() { }
+
+  openCreateModalFunc(){
+    this.openCreateModal = true;
+  }
+
+  closeCreateModalFunc(){
+    this.openCreateModal = false;
+  }
+  
 }

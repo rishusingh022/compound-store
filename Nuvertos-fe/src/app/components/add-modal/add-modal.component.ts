@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-add-modal',
@@ -7,4 +7,9 @@ import { Component, Input } from '@angular/core';
 })
 export class AddModalComponent {
   @Input() newCompound: any = {};
+  @Output() close: EventEmitter<void> = new EventEmitter<void>();
+
+  closeCreateModalFunc(){
+    this.close.emit();
+  }
 }
