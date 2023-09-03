@@ -12,4 +12,31 @@
   padding: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
-  
+
+a {
+  text-decoration: none;
+}
+
+#app {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+#app > * {
+  flex: none;
+}
+
+#app > *:nth-child(3) {
+  flex: 1;
+}
+
+.body-padding {
+  padding-left: max(5vw, 16px);
+  padding-right: max(5vw, 16px);
+}
+
+.main-margin {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

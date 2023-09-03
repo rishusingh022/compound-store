@@ -1,11 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CardComponent } from './components/card/card.component';
-import { PaginationComponent } from './components/pagination/pagination.component';
+import { HomeComponent } from './pages/home/home.component';
+import { CardDetailsComponent } from './pages/card-details/card-details.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +15,8 @@ import { PaginationComponent } from './components/pagination/pagination.componen
     HeaderComponent,
     FooterComponent,
     CardComponent,
-    PaginationComponent
+    HomeComponent,
+    CardDetailsComponent
   ],
   imports: [
     BrowserModule
