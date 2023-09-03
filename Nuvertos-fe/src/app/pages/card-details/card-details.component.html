@@ -6,11 +6,13 @@
       class="flex items-cente justify-between border-b border-gray-200 px-4 pb-3 sm:px-6"
     >
       <div
+        (click)="openEditModalFunc()"
         class="cursor-pointer inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
         Edit Compound
       </div>
       <div
+        (click)="openDeleteModalFunc()"
         class="cursor-pointer inline-flex items-center px-4 py-3 text-sm font-medium text-center text-white bg-red-600 rounded-lg hover:bg-red-500 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
       >
         Delete Compound
@@ -28,4 +30,6 @@
       </div>
     </div>
   </div>
+  <app-edit-modal *ngIf="openEditModal" (close)="closeEditModalFunc()"></app-edit-modal>
+  <app-alert-modal *ngIf="openDeleteModal" (close)="closeDeleteModalFunc()"></app-alert-modal>
 </div>

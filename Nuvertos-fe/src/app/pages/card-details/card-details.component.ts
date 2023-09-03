@@ -6,5 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-details.component.scss']
 })
 export class CardDetailsComponent {
+  
+  openEditModal:boolean = false;
+  openDeleteModal:boolean = false;
 
+  constructor() { }
+
+  openEditModalFunc(){
+    this.openEditModal = true;
+  }
+
+  closeEditModalFunc(){
+    this.openEditModal = false;
+  }
+
+  openDeleteModalFunc(){
+    this.openDeleteModal = true;
+  }
+
+  closeDeleteModalFunc(){
+    this.openDeleteModal = false;
+  }
 }

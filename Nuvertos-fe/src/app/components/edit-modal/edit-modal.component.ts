@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-edit-modal',
@@ -11,4 +11,10 @@ export class EditModalComponent {
     description: '',
     imgURL: '',
   };
+
+  @Output() close: EventEmitter<void> = new EventEmitter<void>();
+
+  closeEditModalFunc(){
+    this.close.emit();
+  }
 }
