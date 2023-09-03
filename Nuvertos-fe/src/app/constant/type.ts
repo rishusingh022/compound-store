@@ -2,7 +2,7 @@ export interface Compound {
   id?: number;
   compoundName: string;
   compoundDescription: string;
-  compoundImageUrl: string;
+  compoundImage: string;
 };
 
 export interface CompoundResponse {

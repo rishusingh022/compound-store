@@ -11,6 +11,6 @@ export class CardComponent {
     id: 0,
     compoundName: '',
     compoundDescription: '',
-    compoundImageUrl: ''
+    compoundImage: ''
   };
 }
