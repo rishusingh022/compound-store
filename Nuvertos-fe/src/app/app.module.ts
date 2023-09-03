@@ -12,6 +12,7 @@ import { CardDetailsComponent } from './pages/card-details/card-details.componen
 import { AddModalComponent } from './components/add-modal/add-modal.component';
 import { AlertModalComponent } from './components/alert-modal/alert-modal.component';
 import { EditModalComponent } from './components/edit-modal/edit-modal.component';
+import { NotFoundPageComponent } from './pages/not-found-page/not-found-page.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { EditModalComponent } from './components/edit-modal/edit-modal.component
     CardDetailsComponent,
     AddModalComponent,
     AlertModalComponent,
-    EditModalComponent
+    EditModalComponent,
+    NotFoundPageComponent
   ],
   imports: [
     BrowserModule,
