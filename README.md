@@ -2,29 +2,30 @@
 Compounds Store reference for NuvertOs Users 
 
 ## Landing Screen
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/1888f50c-62c5-46d8-9d17-ea9635add12f)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/35c07d43-806b-4858-826f-6b17e267da41)
 
 ## Home Screen
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/c28a2788-e9a9-4157-81f6-8256f16d2c66)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/253154c5-fd94-4df1-9551-a79eddd3face)
 
 ## Add Compound Screen
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/66925ba0-eaf0-4b67-b70c-63150c44b65f)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/61765194-bdda-4c03-a5c5-c9bf83a41bf9)
 
 ## Compound Detail Screen
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/bf4483e9-5d98-49cf-9506-ab55dc8a2834)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/3259a6ca-e46b-4449-9ec8-c6cf3dbec03e)
 
 ## Edit Compound Screen
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/d224073b-8f69-47aa-9d6d-cd29aabebd66)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/ee76c53d-cac5-4440-b326-c02188855ddd)
 
 ## Delete Compound Screen
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/212ad14b-1654-4770-b8b5-9e8ede62206e)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/01747247-10f2-4081-ae49-a8d8186f3563)
 
 ## Error Screen
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/35d34bb7-dffa-4847-a5f7-15406ad9dc89)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/720d4b95-5f99-4d4d-9b85-4dc4a1b62f43)
 
 ## Form Error Handler
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/3d37c8bf-9d9a-48b7-8321-4f5f31f1bc36)
-![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/24980551-5b5c-438c-943f-18180283ca32)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/57379f73-fa8a-4d16-a574-5211ad60ecdf)
+![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/fac8c4c1-bdcb-479a-81ae-2b7ed8554fe3)
+
 
 
 
