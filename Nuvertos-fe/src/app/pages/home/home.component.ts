@@ -19,10 +19,22 @@ export class HomeComponent {
 
   ngOnInit(): void {
     this.route.queryParams.subscribe(params => {
+      // if page is not a number or if there are more than 1 query params, redirect to 404
+      if(params['page'] && isNaN(Number(params['page']))){
+        this.router.navigate(['/404'])
+        return;
+      }
+
+      if(params['page'] && Number(params['page']) < 1){
+        this.router.navigate(['/404'])
+        return;
+      }
+
       if ((Object.keys(params).length === 1 && !params['page']) || Object.keys(params).length > 1 ) {
         this.router.navigate(['/404'])
         return;
       }
+      
       this.currPage = Number(params['page']) || 1;
       this.compoundService.getCompounds(this.currPage).subscribe((res: CompoundResponse) => {
         console.log(res.rows);

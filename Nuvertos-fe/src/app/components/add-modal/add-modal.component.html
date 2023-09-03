@@ -35,53 +35,49 @@
               Add Compound
             </h3>
             <div class="mt-2">
-              <form class="flex flex-col w-full gap-5">
+              <form [formGroup]="compoundForm" class="flex flex-col w-full gap-5">
                 <div class="relative">
-                  <label
-                    for="name"
-                    class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
-                    >Name</label
-                  >
-                  <input
-                    [(ngModel)]="newCompound.name"
-                    type="text"
-                    name="name"
-                    id="name"
-                    class="p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    placeholder="Cyanide"
-                  />
+                    <label 
+                        for="name" 
+                        class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900" 
+                    >Name</label>
+                    <input 
+                        formControlName="name" 
+                        type="text" 
+                        id="name" 
+                        class="p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                        placeholder="Cyanide" 
+                    />
+                    <app-error-message [errorMessage]="'Name is required'" *ngIf="compoundForm.get('name')?.invalid && compoundForm.get('name')?.touched"></app-error-message>
                 </div>
                 <div class="relative">
-                  <label
-                    for="description"
-                    class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
-                    >Description</label
-                  >
-                  <textarea
-                    [(ngModel)]="newCompound.description"
-                    type="text"
-                    name="description"
-                    id="description"
-                    class="p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    placeholder="In chemistry, a cyanide is a chemical compound ..."
-                  ></textarea>
+                    <label 
+                        for="description" 
+                        class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900" 
+                    >Description</label>
+                    <textarea 
+                        formControlName="description" 
+                        id="description" 
+                        class="p-2 block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                        placeholder="In chemistry, a cyanide is a chemical compound ..."
+                    ></textarea>
+                    <app-error-message [errorMessage]="'Description is required'" *ngIf="compoundForm.get('description')?.invalid && compoundForm.get('description')?.touched"></app-error-message>
                 </div>
                 <div class="relative">
-                  <label
-                    for="image"
-                    class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
-                    >Image URL</label
-                  >
-                  <input
-                    [(ngModel)]="newCompound.imgURL"
-                    type="text"
-                    name="image"
-                    id="image"
-                    class="block p-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                    placeholder="https://upload.wikimedia.org/wikipedia/commons/b/be/name.png"
-                  />
+                    <label 
+                        for="image" 
+                        class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900" 
+                    >Image URL</label>
+                    <input 
+                        formControlName="image" 
+                        type="text" 
+                        id="image" 
+                        class="block p-2 w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" 
+                        placeholder="https://upload.wikimedia.org/wikipedia/commons/b/be/name.png" 
+                    />
+                    <app-error-message [errorMessage]="'Image URL is required'" *ngIf="compoundForm.get('image')?.invalid && compoundForm.get('image')?.touched"></app-error-message>
                 </div>
-              </form>
+            </form>
             </div>
           </div>
         </div>
