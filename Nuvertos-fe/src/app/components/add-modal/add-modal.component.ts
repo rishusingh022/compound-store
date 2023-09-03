@@ -29,6 +29,7 @@ export class AddModalComponent {
 
     this.compoundService.addCompound(newCompound).subscribe(() => {
       this.router.navigate(['/compounds']);
+      window.location.reload();
     }, error => console.log(error));
     
     this.newCompound = {};
