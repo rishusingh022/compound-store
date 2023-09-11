@@ -1,4 +1,4 @@
-# Compounds Store
+# Compounds Store for reference 
 
 ## Landing Screen
 ![image](https://github.com/rishusingh022/nuvertOS-assignment/assets/60195863/35c07d43-806b-4858-826f-6b17e267da41)
